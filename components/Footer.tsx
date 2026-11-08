@@ -1,18 +1,9 @@
-"use client";
-
 import React from "react";
 import Link from "next/link";
+import BackToTop from "./BackToTop";
+import CurrentYear from "./CurrentYear";
 
 export default function Footer() {
-  const [currentYear, setCurrentYear] = React.useState<number>(2025);
-
-  React.useEffect(() => {
-    setCurrentYear(new Date().getFullYear());
-  }, []);
-
-  const scrollToTop = () => {
-    window.scrollTo({ top: 0, behavior: "smooth" });
-  };
 
   const navLinks = [
     { label: "Inicio", href: "#inicio" },
@@ -46,17 +37,7 @@ export default function Footer() {
           </div>
 
           {/* Botón «volver arriba» */}
-          <button
-            type="button"
-            onClick={scrollToTop}
-            className="group inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/[0.04] hover:bg-white/[0.08] border border-white/10 text-white/80 hover:text-white text-xs font-semibold transition-all"
-            aria-label="Volver arriba de la página"
-          >
-            <span>Volver arriba</span>
-            <span className="w-5 h-5 rounded-full bg-[#FF5A1F] text-white flex items-center justify-center transition-transform duration-300 group-hover:-translate-y-0.5">
-              ↑
-            </span>
-          </button>
+          <BackToTop />
         </div>
 
         {/* Middle Row: Navigation Links */}
@@ -74,7 +55,7 @@ export default function Footer() {
 
         {/* Bottom Row: Credits & Copyright */}
         <div className="flex flex-col sm:flex-row items-center justify-between gap-4 pt-6 border-t border-white/[0.06] text-xs text-white/40">
-          <p>© {currentYear} Albeiro. Todos los derechos reservados.</p>
+          <p>© <CurrentYear /> Albeiro. Todos los derechos reservados.</p>
           <p className="flex items-center gap-2">
             <span>Hecho con</span>
             <span className="text-white/80 font-medium">Next.js</span>
@@ -86,4 +67,3 @@ export default function Footer() {
     </footer>
   );
 }
-

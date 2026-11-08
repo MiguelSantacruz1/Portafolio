@@ -28,7 +28,6 @@ export default function PillButton({
 }: PillButtonProps) {
   const isWhite = variant === "white";
   const isOrange = variant === "orange";
-  const isOutline = variant === "outline";
 
   const baseStyles =
     "group inline-flex items-center gap-3 pl-5 pr-2 py-2 rounded-full font-semibold text-sm transition-all duration-300 hover:scale-[1.03] active:scale-[0.98] select-none";
