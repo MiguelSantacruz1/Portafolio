@@ -21,15 +21,18 @@ export default function Projects() {
         </p>
       </div>
 
-      {/* Projects Grid: 1 col móvil, 2 col tablet, 3 col escritorio */}
+      {/* Grid */}
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
         {projects.map((project, index) => (
           <article
             key={project.title}
             className="group flex flex-col bg-[#151515] border border-white/[0.06] rounded-[32px] sm:rounded-[36px] overflow-hidden p-4 sm:p-5 hover:border-white/20 transition-all duration-300 hover:-translate-y-1 shadow-lg shadow-black/30"
           >
-            {/* Vertical Image with rounded corners and B&W to Color hover */}
-            <div className="relative w-full aspect-[4/5] rounded-[24px] sm:rounded-[28px] overflow-hidden bg-[#0A0A0A] mb-5">
+            {/* Image — aspect-ratio wrapper with explicit position */}
+            <div
+              style={{ position: "relative", aspectRatio: "4/5", borderRadius: "24px", overflow: "hidden" }}
+              className="bg-[#0A0A0A] mb-5"
+            >
               <Image
                 src={project.image}
                 alt={`Captura del proyecto ${project.title}`}
@@ -37,7 +40,6 @@ export default function Projects() {
                 sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                 className="object-cover object-center filter grayscale contrast-125 group-hover:grayscale-0 group-hover:scale-105 transition-all duration-500 ease-out"
               />
-
               {/* Number Badge */}
               <div className="absolute top-4 left-4 z-10 px-3 py-1 rounded-full bg-black/60 backdrop-blur-md border border-white/10 text-xs font-bold tracking-wider">
                 <span className="text-[#FF5A1F]">#</span>
@@ -45,7 +47,7 @@ export default function Projects() {
               </div>
             </div>
 
-            {/* Project Content */}
+            {/* Content */}
             <div className="flex-1 flex flex-col justify-between space-y-4 px-2 pb-2">
               <div className="space-y-2">
                 <h3 className="text-xl sm:text-2xl font-bold text-white tracking-tight group-hover:text-[#FF5A1F] transition-colors">
@@ -68,7 +70,7 @@ export default function Projects() {
                 ))}
               </div>
 
-              {/* Action Links */}
+              {/* Links */}
               <div className="pt-4 border-t border-white/[0.06] flex items-center justify-between gap-3">
                 <a
                   href={project.github}
@@ -90,7 +92,6 @@ export default function Projects() {
                   </svg>
                   <span>GitHub</span>
                 </a>
-
                 <a
                   href={project.demo}
                   target="_blank"
@@ -99,18 +100,8 @@ export default function Projects() {
                   aria-label={`Ver demo en vivo de ${project.title}`}
                 >
                   <span>Ver Demo</span>
-                  <svg
-                    className="w-3.5 h-3.5"
-                    fill="none"
-                    stroke="currentColor"
-                    strokeWidth="2.5"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"
-                    />
+                  <svg className="w-3.5 h-3.5" fill="none" stroke="currentColor" strokeWidth="2.5" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
                   </svg>
                 </a>
               </div>
@@ -121,4 +112,3 @@ export default function Projects() {
     </section>
   );
 }
-

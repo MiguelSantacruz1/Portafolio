@@ -11,16 +11,9 @@ export default function About() {
   ];
 
   const skillBadges = [
-    "Next.js 15",
-    "TypeScript",
-    "React 19",
-    "Tailwind CSS",
-    "Node.js",
-    "PostgreSQL",
-    "Prisma ORM",
-    "UI/UX Design",
-    "Git & GitHub",
-    "Vercel Deployments",
+    "Next.js 15", "TypeScript", "React 19", "Tailwind CSS",
+    "Node.js", "PostgreSQL", "Prisma ORM", "UI/UX Design",
+    "Git & GitHub", "Vercel Deployments",
   ];
 
   return (
@@ -52,7 +45,20 @@ export default function About() {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
           {/* Photo Column */}
           <div className="lg:col-span-5 flex justify-center">
-            <div className="relative w-full max-w-[380px] h-[400px] sm:h-[460px] rounded-[28px] overflow-hidden border border-white/10 group">
+            <div
+              style={{
+                position: "relative",
+                width: "100%",
+                maxWidth: "380px",
+                height: "420px",
+                borderRadius: "28px",
+                overflow: "hidden",
+                borderWidth: "1px",
+                borderColor: "rgba(255,255,255,0.1)",
+                borderStyle: "solid",
+              }}
+              className="group"
+            >
               <Image
                 src="/images/about.jpg"
                 alt="Albeiro trabajando en proyectos de desarrollo de software"
@@ -72,9 +78,8 @@ export default function About() {
             </div>
           </div>
 
-          {/* Presentation & Details Column */}
+          {/* Details Column */}
           <div className="lg:col-span-7 space-y-8">
-            {/* First-person presentation paragraph (3 to 5 lines) */}
             <div className="space-y-4">
               <h3 className="text-xl sm:text-2xl font-bold text-white tracking-tight">
                 Hola, un placer saludarte 👋
@@ -89,29 +94,25 @@ export default function About() {
               </p>
             </div>
 
-            {/* Quick Facts Grid */}
+            {/* Quick Facts */}
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2">
               {quickFacts.map((fact) => (
                 <div
                   key={fact.label}
                   className="bg-[#0F0F0F] border border-white/[0.05] rounded-2xl p-4 flex items-start gap-3 hover:border-white/15 transition-colors"
                 >
-                  <span className="text-2xl" aria-hidden="true">
-                    {fact.icon}
-                  </span>
+                  <span className="text-2xl" aria-hidden="true">{fact.icon}</span>
                   <div>
                     <span className="text-xs uppercase tracking-wider text-white/40 block font-semibold">
                       {fact.label}
                     </span>
-                    <span className="text-sm font-medium text-white/90">
-                      {fact.value}
-                    </span>
+                    <span className="text-sm font-medium text-white/90">{fact.value}</span>
                   </div>
                 </div>
               ))}
             </div>
 
-            {/* Skills Badges */}
+            {/* Skill Badges */}
             <div className="space-y-3 pt-2">
               <span className="text-xs font-semibold uppercase tracking-wider text-white/50 block">
                 Herramientas principales
@@ -133,4 +134,3 @@ export default function About() {
     </section>
   );
 }
-
