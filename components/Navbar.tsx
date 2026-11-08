@@ -43,7 +43,7 @@ export default function Navbar() {
           href="#inicio"
           className="text-2xl font-extrabold tracking-tight text-white flex items-center gap-1 group"
         >
-          <span>Albeiro</span>
+          <span>Miguel</span>
           <span className="text-[#FF5A1F] transition-transform duration-300 group-hover:scale-125">
             .
           </span>

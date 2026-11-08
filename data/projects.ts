@@ -5,32 +5,38 @@ export interface Project {
   tags: string[];
   github: string;
   demo: string;
+  demoLabel?: string;
 }
 
 export const projects: Project[] = [
   {
-    title: "Apex Minimal Store",
-    description: "Plataforma de comercio electrónico con arquitectura moderna, catálogo headless, pasarela de pago Stripe y diseño editorial minimalista de alta conversión.",
+    title: "SkillVibes",
+    description:
+      "Plataforma de tutorías universitarias y gestión de habilidades, con autenticación segura, roles diferenciados de tutor y estudiante, y notificaciones en tiempo real para sesiones y mensajes.",
     image: "/images/project-1.jpg",
-    tags: ["Next.js 15", "TypeScript", "Tailwind CSS", "Stripe", "Prisma"],
-    github: "https://github.com/albeiro/apex-minimal-store",
-    demo: "https://apex-minimal-store.vercel.app",
+    tags: ["React", "Node.js", "Socket.io", "MongoDB", "JWT", "REST API"],
+    github: "https://github.com/MiguelSantacruz1/SkillVibe-B",
+    demo: "https://github.com/MiguelSantacruz1/SkillVibe-B",
+    demoLabel: "Ver Repo",
   },
   {
-    title: "Pulse Audio Interface",
-    description: "Aplicación web interactiva para control y ecualización de audio espacial, con visualizadores en tiempo real sobre Web Audio API y síntesis modular.",
-    image: "/images/project-2.jpg",
-    tags: ["React", "TypeScript", "Web Audio API", "Tailwind CSS", "Framer Motion"],
-    github: "https://github.com/albeiro/pulse-audio-interface",
-    demo: "https://pulse-audio.vercel.app",
+    title: "Eternal Sleep",
+    description:
+      "Videojuego de plataformas 2D en pixel art ambientado en un mundo de sueños oscuros. Explora pesadillas generadas proceduralmente, combate enemigos y jefes, y desbloquea habilidades para despertar a los aldeanos.",
+    image: "/images/project-eternal-sleep.webp",
+    tags: ["Unity 6", "C#", "URP 2D", "Cloudflare Workers", "Gemini AI"],
+    github: "https://github.com/benavidesandres/eternal_sleep",
+    demo: "https://github.com/benavidesandres/eternal_sleep",
+    demoLabel: "Ver Repo",
   },
   {
-    title: "Aura Essence Studio",
-    description: "Sistema de gestión y landing page experimental para marca de fragancias de lujo, con animaciones 3D fluidas, microinteracciones y optimización SEO al 100%.",
-    image: "/images/project-3.jpg",
-    tags: ["Next.js", "Tailwind CSS", "Three.js", "Zustand", "Vercel"],
-    github: "https://github.com/albeiro/aura-essence-studio",
-    demo: "https://aura-essence.vercel.app",
+    title: "TRACE",
+    description:
+      "Aplicación Android que escanea códigos de barras para consultar el origen, fabricación e impacto ambiental de productos, evaluando su sostenibilidad con datos de fuentes externas.",
+    image: "/images/project-trace.webp",
+    tags: ["Kotlin", "Jetpack Compose", "CameraX", "ML Kit", "Node.js", "Hilt"],
+    github: "https://github.com/MiguelSantacruz1/TRACE",
+    demo: "https://github.com/MiguelSantacruz1/TRACE",
+    demoLabel: "Ver Repo",
   },
 ];
-

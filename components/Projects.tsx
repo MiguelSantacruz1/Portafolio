@@ -1,6 +1,6 @@
 import React from "react";
-import Image from "next/image";
 import { projects } from "@/data/projects";
+import Image from "next/image";
 
 export default function Projects() {
   return (
@@ -16,8 +16,8 @@ export default function Projects() {
           </h2>
         </div>
         <p className="text-white/55 text-sm sm:text-base max-w-md">
-          Una selección de aplicaciones web construidas con rigurosos
-          estándares de rendimiento, accesibilidad y diseño de interfaces.
+          Proyectos reales que abarcan desde plataformas web hasta apps móviles
+          y videojuegos — cada uno con un problema concreto que resolver.
         </p>
       </div>
 
@@ -28,9 +28,9 @@ export default function Projects() {
             key={project.title}
             className="group flex flex-col bg-[#151515] border border-white/[0.06] rounded-[32px] sm:rounded-[36px] overflow-hidden p-4 sm:p-5 hover:border-white/20 transition-all duration-300 hover:-translate-y-1 shadow-lg shadow-black/30"
           >
-            {/* Image — aspect-ratio wrapper with explicit position */}
+            {/* Image */}
             <div
-              style={{ position: "relative", aspectRatio: "4/5", borderRadius: "24px", overflow: "hidden" }}
+              style={{ position: "relative", aspectRatio: "16/10", borderRadius: "24px", overflow: "hidden" }}
               className="bg-[#0A0A0A] mb-5"
             >
               <Image
@@ -93,13 +93,13 @@ export default function Projects() {
                   <span>GitHub</span>
                 </a>
                 <a
-                  href={project.demo}
+                  href={project.github}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full text-xs font-semibold bg-[#FF5A1F]/10 hover:bg-[#FF5A1F] text-[#FF5A1F] hover:text-white border border-[#FF5A1F]/20 hover:border-transparent transition-all duration-200"
-                  aria-label={`Ver demo en vivo de ${project.title}`}
+                  aria-label={`Ver repositorio de ${project.title}`}
                 >
-                  <span>Ver Demo</span>
+                  <span>{project.demoLabel ?? "Ver Repo"}</span>
                   <svg className="w-3.5 h-3.5" fill="none" stroke="currentColor" strokeWidth="2.5" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
                   </svg>

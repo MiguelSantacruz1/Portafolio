@@ -1,5 +1,4 @@
 import React from "react";
-import Image from "next/image";
 import PillButton from "./PillButton";
 
 export default function Hero() {
@@ -22,44 +21,55 @@ export default function Hero() {
 
         <div className="relative z-10 px-6 sm:px-10 lg:px-14 pt-12 sm:pt-16 lg:pt-20 pb-10 sm:pb-14">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-6 items-center">
+
             {/* Left: Headline */}
             <div className="lg:col-span-5 flex flex-col justify-center space-y-4 text-left z-20">
               <span className="text-white/80 font-medium text-lg sm:text-xl tracking-wide">
                 Hola, soy
               </span>
               <h1 className="text-4xl sm:text-6xl xl:text-7xl font-extrabold text-white tracking-tighter leading-[1.05]">
-                Full Stack <br />
-                <span className="text-white drop-shadow-sm">Developer</span>
+                Miguel <br />
+                <span className="text-white drop-shadow-sm">Santacruz</span>
               </h1>
               <p className="text-white/70 text-sm sm:text-base max-w-sm pt-2 lg:hidden">
                 Construyendo interfaces memorables, limpias y sistemas robustos
-                que resuelven desafíos reales de negocio.
+                que resuelven desafíos reales.
               </p>
             </div>
 
-            {/* Center: Portrait */}
+            {/* Center: Initials Placeholder (tu foto va aquí) */}
             <div className="lg:col-span-3 flex justify-center items-center my-4 lg:my-0">
               <div
                 style={{
                   position: "relative",
-                  width: "280px",
-                  height: "380px",
+                  width: "240px",
+                  height: "320px",
                   borderRadius: "36px",
                   overflow: "hidden",
+                  flexShrink: 0,
                 }}
-                className="shadow-2xl shadow-black/60 group sm:w-72 sm:h-96 md:w-80 md:h-[440px]"
+                className="shadow-2xl shadow-black/60 sm:w-64 sm:h-80 md:w-72 md:h-96"
               >
-                {/* Duotone overlays */}
-                <div className="absolute inset-0 z-10 bg-gradient-to-t from-[#0F0F0F] via-transparent to-transparent opacity-80" />
-                <div className="absolute inset-0 z-10 bg-gradient-to-tr from-[#FF5A1F]/30 via-transparent to-[#FF4A1C]/20 mix-blend-color" />
-                <Image
-                  src="/images/hero-portrait.jpg"
-                  alt="Retrato profesional de Albeiro - Desarrollador Full Stack"
-                  fill
-                  priority
-                  sizes="(max-width: 768px) 280px, (max-width: 1200px) 340px, 380px"
-                  className="object-cover object-center filter contrast-110 brightness-95 group-hover:scale-105 transition-transform duration-700 ease-out"
-                />
+                {/* Placeholder gradient con iniciales */}
+                <div className="absolute inset-0 bg-gradient-to-br from-[#FF4A1C]/60 via-[#5A1A10]/80 to-[#0F0F0F] flex flex-col items-center justify-center gap-3">
+                  <div
+                    style={{
+                      width: "96px",
+                      height: "96px",
+                      borderRadius: "9999px",
+                      background: "rgba(255,90,31,0.25)",
+                      border: "2px solid rgba(255,90,31,0.5)",
+                      display: "flex",
+                      alignItems: "center",
+                      justifyContent: "center",
+                    }}
+                  >
+                    <span className="text-3xl font-extrabold text-white tracking-tight">MS</span>
+                  </div>
+                  <span className="text-white/40 text-xs text-center px-4">
+                    Tu foto va aquí
+                  </span>
+                </div>
               </div>
             </div>
 
@@ -70,14 +80,15 @@ export default function Hero() {
                   El gran código debe sentirse invisible.
                 </h2>
                 <p className="text-white/75 text-sm sm:text-base leading-relaxed">
-                  De la arquitectura técnica al último píxel, creo aplicaciones
-                  web veloces, accesibles y diseñadas para conectar y convertir.
+                  De la arquitectura técnica al último píxel, construyo
+                  aplicaciones web, móviles y experiencias digitales que
+                  conectan y resuelven problemas reales.
                 </p>
               </div>
               <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-3 w-full sm:w-auto">
                 <PillButton
                   href="/cv.pdf"
-                  download="CV_Albeiro_FullStack.pdf"
+                  download="CV_MiguelSantacruz.pdf"
                   variant="white"
                   ariaLabel="Descargar Curriculum Vitae en PDF"
                 >
@@ -86,7 +97,7 @@ export default function Hero() {
                 <PillButton
                   href="#proyectos"
                   variant="orange"
-                  ariaLabel="Explorar proyectos destacados"
+                  ariaLabel="Explorar proyectos"
                 >
                   Ver proyectos
                 </PillButton>

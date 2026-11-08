@@ -1,19 +1,18 @@
 import React from "react";
-import Image from "next/image";
 import PillButton from "./PillButton";
 
 export default function About() {
   const quickFacts = [
-    { label: "Ubicación", value: "Bogotá, Colombia (Remoto Global)", icon: "📍" },
-    { label: "Educación", value: "Ingeniería de Sistemas (Últimos semestres)", icon: "🎓" },
-    { label: "Enfoque", value: "Arquitectura Web & Sistemas de Diseño", icon: "⚡" },
-    { label: "Intereses", value: "Next.js, UX Editorial, Performance, IA", icon: "💡" },
+    { label: "Ubicación", value: "Pasto, Colombia — Disponible remoto", icon: "📍" },
+    { label: "Educación", value: "5to semestre de Ingeniería de Software", icon: "🎓" },
+    { label: "Enfoque", value: "Web, Móvil & Videojuegos", icon: "⚡" },
+    { label: "Intereses", value: "Next.js, Android, Unity, Cloud, IA", icon: "💡" },
   ];
 
   const skillBadges = [
-    "Next.js 15", "TypeScript", "React 19", "Tailwind CSS",
-    "Node.js", "PostgreSQL", "Prisma ORM", "UI/UX Design",
-    "Git & GitHub", "Vercel Deployments",
+    "Next.js", "TypeScript", "React", "Tailwind CSS",
+    "Node.js", "Kotlin", "Jetpack Compose", "Unity 6",
+    "C#", "MongoDB", "Git & GitHub",
   ];
 
   return (
@@ -25,16 +24,16 @@ export default function About() {
             Behind the Code
           </span>
           <h2 className="text-3xl sm:text-5xl font-extrabold text-white tracking-tight leading-tight">
-            Transformando ideas complejas en experiencias digitales memorables.
+            Transformando ideas complejas en experiencias digitales que importan.
           </h2>
         </div>
         <div className="lg:col-span-5 flex flex-col justify-between items-start space-y-5 pt-2">
           <p className="text-white/70 text-base sm:text-lg leading-relaxed">
-            Soy un desarrollador de software y diseñador enfocado en construir
-            interfaces limpias, intuitivas y sistemas técnicos robustos que
-            resuelven problemas del mundo real.
+            Desarrollador con curiosidad por construir desde aplicaciones web
+            hasta videojuegos y apps móviles — siempre con código limpio y
+            enfoque en resolver problemas reales.
           </p>
-          <PillButton href="#contacto" variant="orange" ariaLabel="Contactar a Albeiro">
+          <PillButton href="#contacto" variant="orange" ariaLabel="Contactar a Miguel">
             Iniciemos un proyecto
           </PillButton>
         </div>
@@ -43,38 +42,53 @@ export default function About() {
       {/* Main Content Card */}
       <div className="bg-[#151515] border border-white/[0.06] rounded-[32px] sm:rounded-[40px] p-6 sm:p-10 lg:p-12 shadow-xl shadow-black/40">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
-          {/* Photo Column */}
+
+          {/* Avatar Placeholder Column */}
           <div className="lg:col-span-5 flex justify-center">
             <div
               style={{
                 position: "relative",
                 width: "100%",
                 maxWidth: "380px",
-                height: "420px",
+                height: "380px",
                 borderRadius: "28px",
                 overflow: "hidden",
                 borderWidth: "1px",
-                borderColor: "rgba(255,255,255,0.1)",
                 borderStyle: "solid",
+                borderColor: "rgba(255,255,255,0.08)",
+                background: "linear-gradient(135deg, #1a0a05 0%, #2a1008 50%, #151515 100%)",
+                display: "flex",
+                flexDirection: "column",
+                alignItems: "center",
+                justifyContent: "center",
+                gap: "16px",
               }}
               className="group"
             >
-              <Image
-                src="/images/about.jpg"
-                alt="Albeiro trabajando en proyectos de desarrollo de software"
-                fill
-                sizes="(max-width: 768px) 100vw, 380px"
-                className="object-cover object-center filter grayscale contrast-125 group-hover:grayscale-0 group-hover:scale-105 transition-all duration-700 ease-out"
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-[#151515] via-transparent to-transparent opacity-80" />
-              <div className="absolute bottom-6 left-6 right-6">
-                <span className="inline-block px-3 py-1 bg-[#FF5A1F] text-white text-xs font-bold rounded-full mb-2">
-                  Enfoque Full Stack
-                </span>
-                <p className="text-white font-semibold text-sm">
-                  Apasionado por el detalle tipográfico y la solidez de código.
-                </p>
+              {/* Big Initials */}
+              <div
+                style={{
+                  width: "120px",
+                  height: "120px",
+                  borderRadius: "9999px",
+                  background: "rgba(255,90,31,0.15)",
+                  border: "2px solid rgba(255,90,31,0.4)",
+                  display: "flex",
+                  alignItems: "center",
+                  justifyContent: "center",
+                }}
+              >
+                <span className="text-5xl font-extrabold text-white/90 tracking-tight">MS</span>
               </div>
+              <span className="text-[#FF5A1F] font-bold text-lg tracking-tight">Miguel Santacruz</span>
+              <div className="flex flex-col items-center gap-1">
+                <span className="text-white/50 text-sm">Ingeniería de Software</span>
+                <span className="text-white/35 text-xs">Pasto, Colombia</span>
+              </div>
+              {/* Replace hint */}
+              <span className="absolute bottom-4 text-white/25 text-xs">
+                📸 Tu foto va aquí
+              </span>
             </div>
           </div>
 
@@ -85,12 +99,12 @@ export default function About() {
                 Hola, un placer saludarte 👋
               </h3>
               <p className="text-white/80 text-base sm:text-lg leading-relaxed">
-                Soy Albeiro, desarrollador full stack con un marcado criterio
-                editorial y de diseño UI/UX. Mi labor se centra en dar vida a
-                aplicaciones web completas, escalables y ultra rápidas utilizando
-                el ecosistema de Next.js, TypeScript y Tailwind CSS. Disfruto
-                cuidar cada microinteracción y escribir código limpio, legible y
-                preparado para producción continua.
+                Soy Miguel Santacruz Beltrán, estudiante de 5to semestre de Ingeniería
+                de Software en Pasto, Colombia. Me apasiona construir soluciones
+                tecnológicas que combinan diseño limpio con arquitectura sólida, desde
+                aplicaciones web hasta videojuegos y apps móviles. Disfruto explorar
+                nuevas tecnologías y enfrentar retos de desarrollo que tengan impacto
+                real en las personas.
               </p>
             </div>
 

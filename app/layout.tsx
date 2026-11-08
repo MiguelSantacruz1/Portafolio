@@ -10,25 +10,26 @@ const plusJakartaSans = Plus_Jakarta_Sans({
 });
 
 export const metadata: Metadata = {
-  title: "Albeiro | Full Stack Developer & UI/UX Specialist",
+  title: "Miguel Santacruz | Desarrollador de Software",
   description:
-    "Portafolio profesional de Albeiro. Desarrollo de aplicaciones web modernas, arquitectura frontend y diseño editorial con Next.js, TypeScript y Tailwind CSS.",
+    "Portafolio de Miguel Santacruz Beltrán. Estudiante de Ingeniería de Software apasionado por el desarrollo web, aplicaciones móviles y videojuegos.",
   keywords: [
-    "Albeiro",
-    "Full Stack Developer",
-    "Frontend Engineer",
+    "Miguel Santacruz",
+    "Desarrollador de Software",
+    "Ingeniería de Software",
     "Next.js",
-    "TypeScript",
-    "Tailwind CSS",
-    "Portafolio",
+    "React",
+    "Kotlin",
+    "Unity",
+    "Pasto Colombia",
   ],
-  authors: [{ name: "Albeiro" }],
+  authors: [{ name: "Miguel Santacruz Beltrán" }],
   openGraph: {
-    title: "Albeiro | Full Stack Developer & UI/UX Specialist",
+    title: "Miguel Santacruz | Desarrollador de Software",
     description:
-      "Desarrollo de software y diseño editorial premium con Next.js, TypeScript y Tailwind CSS.",
+      "Portafolio de Miguel Santacruz Beltrán — Proyectos web, móviles y de videojuegos.",
     type: "website",
-    locale: "es_LA",
+    locale: "es_CO",
   },
 };
 
@@ -46,7 +47,6 @@ export default function RootLayout({
           <div className="absolute top-[45%] -left-32 w-[600px] h-[600px] bg-[#5A1A10]/25 rounded-full blur-[160px]" />
           <div className="absolute bottom-20 -right-20 w-[650px] h-[500px] bg-[#FF5A1F]/15 rounded-full blur-[160px]" />
         </div>
-
         {/* Centered Canvas Container */}
         <div className="relative z-10 w-full max-w-[1240px] mx-auto min-h-screen bg-[#0F0F0F] shadow-[0_0_90px_rgba(0,0,0,0.85)] border-x border-white/[0.04]">
           {children}

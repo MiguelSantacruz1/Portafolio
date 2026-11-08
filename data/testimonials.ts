@@ -8,25 +8,24 @@ export interface Testimonial {
 
 export const testimonials: Testimonial[] = [
   {
-    name: "Valeria Mendoza",
-    role: "Directora de Producto en NexaTech",
-    text: "Trabajar con Albeiro transformó por completo nuestra plataforma. Su atención al detalle visual y la calidad de su arquitectura frontend con Next.js elevaron la experiencia de nuestros usuarios a un nivel internacional.",
-    avatar: "/images/avatar-1.jpg",
+    name: "Andrés Benavides",
+    role: "Compañero de Ingeniería de Software",
+    text: "Colaboré con Miguel en el proyecto Eternal Sleep y su capacidad para organizar el código y mantener el proyecto avanzando fue clave. Siempre dispuesto a ayudar al equipo y proponer soluciones cuando nos bloqueábamos.",
+    avatar: "/images/avatar-cat.jpg",
     stars: 5,
   },
   {
-    name: "Carlos Eduardo Ríos",
-    role: "Lead Tech Architect en StudioNova",
-    text: "Pocos desarrolladores combinan un criterio de diseño editorial tan impecable con un código TypeScript limpio, modular y veloz. Cumplió los plazos antes de tiempo y con estándares que superaron toda expectativa.",
-    avatar: "/images/avatar-2.jpg",
+    name: "Laura Muñoz",
+    role: "Compañera de clase — 5to semestre",
+    text: "Miguel tiene una forma muy clara de explicar los conceptos técnicos. En los proyectos grupales siempre va más allá de lo pedido y se nota que realmente disfruta lo que hace. Es de esas personas con las que da gusto trabajar.",
+    avatar: "/images/avatar-cat.jpg",
     stars: 5,
   },
   {
-    name: "Sofía Arango",
-    role: "Fundadora & CEO en Lumina Studio",
-    text: "Nuestra web aumentó la tasa de conversión en un 42% tras el rediseño y desarrollo de Albeiro. La velocidad de carga en Vercel y el cuidado en cada interacción demuestran su profesionalismo sobresaliente.",
-    avatar: "/images/avatar-3.jpg",
+    name: "Carlos Rodríguez",
+    role: "Compañero de universidad — Pasto",
+    text: "Lo que más me sorprende de Miguel es que trabaja tanto en frontend como en backend y además se mete a hacer apps móviles y videojuegos. Tiene mucha curiosidad y eso se nota en la calidad de sus proyectos.",
+    avatar: "/images/avatar-cat.jpg",
     stars: 5,
   },
 ];
-
