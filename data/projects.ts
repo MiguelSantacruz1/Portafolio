@@ -82,7 +82,7 @@ export const projects: Project[] = [
     demoLabel: "Ver Repo",
   },
   {
-    title: "Avionsito",
+    title: "Avión",
     description:
       "Interfaz de selección de asientos para un vuelo Bogotá–Medellín. Mapa de cabina por secciones con precios por clase, estados de asiento disponible, ocupado y seleccionado, y cálculo del total.",
     image: "/images/project-avionsito.png",
