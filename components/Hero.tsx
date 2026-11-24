@@ -2,13 +2,6 @@ import React from "react";
 import PillButton from "./PillButton";
 
 export default function Hero() {
-  const specialties = [
-    { number: "01", title: "Arquitectura Frontend", subtitle: "Next.js & SSR" },
-    { number: "02", title: "Desarrollo Full Stack", subtitle: "TypeScript & APIs" },
-    { number: "03", title: "Diseño UI/UX & Sistemas", subtitle: "Tailwind CSS & Figma" },
-    { number: "04", title: "Cloud & Performance", subtitle: "Vercel & Core Web Vitals" },
-  ];
-
   return (
     <section id="inicio" className="w-full pt-4 pb-12 px-4 sm:px-6 lg:px-8">
       {/* Hero Outer Card */}
@@ -90,22 +83,6 @@ export default function Hero() {
                 </PillButton>
               </div>
             </div>
-          </div>
-
-          {/* Specialties Row */}
-          <div className="mt-14 sm:mt-16 pt-8 border-t border-white/10 grid grid-cols-2 md:grid-cols-4 gap-6 sm:gap-8">
-            {specialties.map((item) => (
-              <div key={item.number} className="flex flex-col space-y-1">
-                <div className="flex items-baseline text-sm font-bold tracking-wider">
-                  <span className="text-[#FF5A1F] text-base">#</span>
-                  <span className="text-white/50">{item.number}</span>
-                </div>
-                <h3 className="text-white font-bold text-sm sm:text-base tracking-tight">
-                  {item.title}
-                </h3>
-                <p className="text-white/50 text-xs">{item.subtitle}</p>
-              </div>
-            ))}
           </div>
         </div>
       </div>

@@ -4,9 +4,9 @@ import PillButton from "./PillButton";
 export default function About() {
   const quickFacts = [
     { label: "Ubicación", value: "Pasto, Colombia — Disponible remoto" },
-    { label: "Educación", value: "5to semestre de Ingeniería de Software" },
+    { label: "Perfil", value: "Desarrollador de Software" },
     { label: "Enfoque", value: "Web, Móvil & Videojuegos" },
-    { label: "Intereses", value: "Next.js, Android, Unity, Cloud, IA" },
+    { label: "Intereses", value: "Next.js, Android, Unity, Cloud" },
   ];
 
   const skillBadges = [
@@ -90,8 +90,8 @@ export default function About() {
                 Hola, un placer saludarte
               </h3>
               <p className="text-white/80 text-base sm:text-lg leading-relaxed">
-                Soy Miguel Santacruz Beltrán, estudiante de 5to semestre de Ingeniería
-                de Software en Pasto, Colombia. Me apasiona construir soluciones
+                Soy Miguel Santacruz Beltrán, desarrollador de software en Pasto,
+                Colombia. Me apasiona construir soluciones
                 tecnológicas que combinan diseño limpio con arquitectura sólida, desde
                 aplicaciones web hasta videojuegos y apps móviles. Disfruto explorar
                 nuevas tecnologías y enfrentar retos de desarrollo que tengan impacto

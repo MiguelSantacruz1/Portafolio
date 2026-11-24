@@ -72,7 +72,7 @@ export default function Contact() {
               Construyamos algo juntos.
             </h3>
             <p className="text-white/65 text-sm sm:text-base leading-relaxed">
-              Disponible para proyectos freelance, colaboraciones académicas o
+              Disponible para proyectos freelance, colaboraciones o
               cualquier idea que quieras llevar a cabo. ¡Escríbeme!
             </p>
 

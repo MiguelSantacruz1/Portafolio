@@ -14,10 +14,6 @@ export default function Skills() {
             Habilidades
           </h2>
         </div>
-        <p className="text-white/55 text-sm sm:text-base max-w-md">
-          Herramientas y tecnologías con las que construyo mis proyectos
-          día a día.
-        </p>
       </div>
 
       {/* Tech Logos Ribbon */}

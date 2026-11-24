@@ -1,6 +1,7 @@
 import React from "react";
 import Link from "next/link";
 import BackToTop from "./BackToTop";
+import Logo from "./Logo";
 import CurrentYear from "./CurrentYear";
 
 export default function Footer() {
@@ -22,13 +23,14 @@ export default function Footer() {
           <div>
             <Link
               href="#inicio"
-              className="text-2xl font-extrabold tracking-tight text-white flex items-center gap-1 group"
+              className="text-2xl font-extrabold tracking-tight text-white flex items-center gap-2 group"
             >
+              <Logo className="w-9 h-9" />
               <span>Miguel</span>
               <span className="text-[#FF5A1F] transition-transform duration-300 group-hover:scale-125">.</span>
             </Link>
             <p className="text-white/50 text-xs sm:text-sm mt-1 max-w-sm">
-              Estudiante de Ingeniería de Software apasionado por construir
+              Desarrollador de software apasionado por construir
               soluciones web, móviles y de videojuegos con impacto real.
             </p>
           </div>
@@ -47,12 +49,6 @@ export default function Footer() {
         {/* Bottom */}
         <div className="flex flex-col sm:flex-row items-center justify-between gap-4 pt-6 border-t border-white/[0.06] text-xs text-white/40">
           <p>© <CurrentYear /> Miguel Santacruz Beltrán. Todos los derechos reservados.</p>
-          <p className="flex items-center gap-2">
-            <span>Hecho con</span>
-            <span className="text-white/80 font-medium">Next.js</span>
-            <span>+</span>
-            <span className="text-white/80 font-medium">Tailwind CSS</span>
-          </p>
         </div>
       </div>
     </footer>

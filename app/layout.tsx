@@ -12,7 +12,7 @@ const plusJakartaSans = Plus_Jakarta_Sans({
 export const metadata: Metadata = {
   title: "Miguel Santacruz | Desarrollador de Software",
   description:
-    "Portafolio de Miguel Santacruz Beltrán. Estudiante de Ingeniería de Software apasionado por el desarrollo web, aplicaciones móviles y videojuegos.",
+    "Portafolio de Miguel Santacruz Beltrán. Desarrollador de software apasionado por el desarrollo web, aplicaciones móviles y videojuegos.",
   keywords: [
     "Miguel Santacruz",
     "Desarrollador de Software",

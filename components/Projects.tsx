@@ -15,10 +15,6 @@ export default function Projects() {
             Mis Proyectos
           </h2>
         </div>
-        <p className="text-white/55 text-sm sm:text-base max-w-md">
-          Proyectos reales que abarcan desde plataformas web hasta apps móviles
-          y videojuegos — cada uno con un problema concreto que resolver.
-        </p>
       </div>
 
       {/* Grid */}

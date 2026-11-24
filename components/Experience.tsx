@@ -8,16 +8,12 @@ export default function Experience() {
       <div className="flex flex-col sm:flex-row sm:items-end justify-between mb-14 gap-4">
         <div>
           <span className="text-xs sm:text-sm font-bold tracking-widest uppercase text-[#FF5A1F] block mb-2">
-            Trayectoria Profesional & Formación
+            Trayectoria Profesional
           </span>
           <h2 className="text-3xl sm:text-5xl font-extrabold text-white tracking-tight">
             Experiencia
           </h2>
         </div>
-        <p className="text-white/55 text-sm sm:text-base max-w-md">
-          Evolución continua a través de proyectos reales de impacto, formación
-          universitaria en ingeniería y especializaciones técnicas avanzadas.
-        </p>
       </div>
 
       {/* Timeline Container */}
