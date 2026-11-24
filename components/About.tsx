@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 import PillButton from "./PillButton";
 
 export default function About() {
@@ -60,25 +61,16 @@ export default function About() {
               }}
               className="group"
             >
-              {/* Initials Placeholder */}
-              <div
-                style={{
-                  width: "120px",
-                  height: "120px",
-                  borderRadius: "9999px",
-                  background: "rgba(255,90,31,0.15)",
-                  border: "2px solid rgba(255,90,31,0.4)",
-                  display: "flex",
-                  alignItems: "center",
-                  justifyContent: "center",
-                }}
-              >
-                <span className="text-5xl font-extrabold text-white/90 tracking-tight">MS</span>
-              </div>
-              <span className="text-[#FF5A1F] font-bold text-lg tracking-tight">Miguel Santacruz</span>
-              <div className="flex flex-col items-center gap-1">
-                <span className="text-white/50 text-sm">Ingeniería de Software</span>
-                <span className="text-white/35 text-xs">Pasto, Colombia</span>
+              <Image
+                src="/images/miguel.jpg"
+                alt="Foto de Miguel Santacruz"
+                fill
+                sizes="(max-width: 1024px) 100vw, 380px"
+                className="object-cover object-[50%_30%]"
+              />
+              <div className="absolute inset-x-0 bottom-0 flex flex-col items-center gap-1 px-4 pb-5 pt-16 bg-gradient-to-t from-black/85 to-transparent">
+                <span className="text-[#FF5A1F] font-bold text-lg tracking-tight">Miguel Santacruz</span>
+                <span className="text-white/60 text-xs">Desarrollador de Software · Pasto, Colombia</span>
               </div>
             </div>
           </div>

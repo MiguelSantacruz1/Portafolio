@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 import PillButton from "./PillButton";
 
 export default function Hero() {
@@ -30,7 +31,7 @@ export default function Hero() {
               </p>
             </div>
 
-            {/* Center: Initials Placeholder (tu foto va aquí) */}
+            {/* Center: Foto */}
             <div className="lg:col-span-3 flex justify-center items-center my-4 lg:my-0">
               <div
                 style={{
@@ -43,23 +44,14 @@ export default function Hero() {
                 }}
                 className="shadow-2xl shadow-black/60 sm:w-64 sm:h-80 md:w-72 md:h-96"
               >
-                {/* Placeholder gradient con iniciales */}
-                <div className="absolute inset-0 bg-gradient-to-br from-[#FF4A1C]/60 via-[#5A1A10]/80 to-[#0F0F0F] flex flex-col items-center justify-center gap-3">
-                  <div
-                    style={{
-                      width: "96px",
-                      height: "96px",
-                      borderRadius: "9999px",
-                      background: "rgba(255,90,31,0.25)",
-                      border: "2px solid rgba(255,90,31,0.5)",
-                      display: "flex",
-                      alignItems: "center",
-                      justifyContent: "center",
-                    }}
-                  >
-                    <span className="text-3xl font-extrabold text-white tracking-tight">MS</span>
-                  </div>
-                </div>
+                <Image
+                  src="/images/miguel.jpg"
+                  alt="Foto de Miguel Santacruz"
+                  fill
+                  priority
+                  sizes="(max-width: 640px) 240px, (max-width: 768px) 256px, 288px"
+                  className="object-cover object-[50%_30%]"
+                />
               </div>
             </div>
 
