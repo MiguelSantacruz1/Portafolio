@@ -3,6 +3,7 @@
 import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import PillButton from "./PillButton";
+import Logo from "./Logo";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -40,8 +41,9 @@ export default function Navbar() {
         {/* Logo */}
         <Link
           href="#inicio"
-          className="text-2xl font-extrabold tracking-tight text-white flex items-center gap-1 group"
+          className="text-2xl font-extrabold tracking-tight text-white flex items-center gap-2 group"
         >
+          <Logo className="w-9 h-9 transition-transform duration-300 group-hover:rotate-[-6deg] group-hover:scale-105" />
           <span>Miguel</span>
           <span className="text-[#FF5A1F] transition-transform duration-300 group-hover:scale-125">
             .
