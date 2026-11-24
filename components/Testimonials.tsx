@@ -28,7 +28,7 @@ export default function Testimonials() {
             {/* Stars & Quote */}
             <div className="space-y-4">
               <div className="flex items-center justify-between">
-                <span className="text-3xl font-serif text-[#FF5A1F] leading-none select-none">"</span>
+                <span className="text-3xl font-serif text-[#FF5A1F] leading-none select-none">&ldquo;</span>
                 <div className="flex items-center gap-1 text-[#FF5A1F]" aria-label="Calificación 5 de 5 estrellas">
                   {[...Array(item.stars || 5)].map((_, i) => (
                     <svg key={i} className="w-4 h-4 fill-current" viewBox="0 0 20 20">
