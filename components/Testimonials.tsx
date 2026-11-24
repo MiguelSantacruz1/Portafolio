@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 import { testimonials } from "@/data/testimonials";
 
 export default function Testimonials() {
@@ -13,7 +14,7 @@ export default function Testimonials() {
           Testimonios
         </h2>
         <p className="text-white/55 text-sm sm:text-base mt-3">
-          Lo que dicen mis compañeros de universidad sobre trabajar juntos.
+          Lo que dicen quienes han trabajado conmigo.
         </p>
       </div>
 
@@ -39,27 +40,15 @@ export default function Testimonials() {
               <p className="text-white/80 text-sm sm:text-base leading-relaxed italic">{item.text}</p>
             </div>
 
-            {/* Author — initial circle, no photo */}
+            {/* Author */}
             <div className="flex items-center gap-4 pt-6 mt-6 border-t border-white/[0.06]">
-              <div
-                style={{
-                  width: "44px",
-                  height: "44px",
-                  borderRadius: "9999px",
-                  background: "rgba(255,90,31,0.15)",
-                  border: "1.5px solid rgba(255,90,31,0.4)",
-                  display: "flex",
-                  alignItems: "center",
-                  justifyContent: "center",
-                  flexShrink: 0,
-                }}
-                className="group-hover:border-[#FF5A1F]/70 transition-colors"
-                aria-hidden="true"
-              >
-                <span className="text-base font-extrabold text-[#FF5A1F]">
-                  {item.name.charAt(0)}
-                </span>
-              </div>
+              <Image
+                src={item.avatar}
+                alt={item.name}
+                width={44}
+                height={44}
+                className="w-11 h-11 rounded-full object-cover shrink-0 border-[1.5px] border-[#FF5A1F]/40 group-hover:border-[#FF5A1F]/70 transition-colors"
+              />
               <div className="flex-1 min-w-0">
                 <h3 className="text-sm sm:text-base font-bold text-white tracking-tight truncate">{item.name}</h3>
                 <p className="text-xs text-white/50 truncate">{item.role}</p>
