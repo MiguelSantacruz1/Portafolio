@@ -3,10 +3,10 @@ import PillButton from "./PillButton";
 
 export default function About() {
   const quickFacts = [
-    { label: "Ubicación", value: "Pasto, Colombia — Disponible remoto", icon: "📍" },
-    { label: "Educación", value: "5to semestre de Ingeniería de Software", icon: "🎓" },
-    { label: "Enfoque", value: "Web, Móvil & Videojuegos", icon: "⚡" },
-    { label: "Intereses", value: "Next.js, Android, Unity, Cloud, IA", icon: "💡" },
+    { label: "Ubicación", value: "Pasto, Colombia — Disponible remoto" },
+    { label: "Educación", value: "5to semestre de Ingeniería de Software" },
+    { label: "Enfoque", value: "Web, Móvil & Videojuegos" },
+    { label: "Intereses", value: "Next.js, Android, Unity, Cloud, IA" },
   ];
 
   const skillBadges = [
@@ -28,11 +28,6 @@ export default function About() {
           </h2>
         </div>
         <div className="lg:col-span-5 flex flex-col justify-between items-start space-y-5 pt-2">
-          <p className="text-white/70 text-base sm:text-lg leading-relaxed">
-            Desarrollador con curiosidad por construir desde aplicaciones web
-            hasta videojuegos y apps móviles — siempre con código limpio y
-            enfoque en resolver problemas reales.
-          </p>
           <PillButton href="#contacto" variant="orange" ariaLabel="Contactar a Miguel">
             Iniciemos un proyecto
           </PillButton>
@@ -65,7 +60,7 @@ export default function About() {
               }}
               className="group"
             >
-              {/* Big Initials */}
+              {/* Initials Placeholder */}
               <div
                 style={{
                   width: "120px",
@@ -85,10 +80,6 @@ export default function About() {
                 <span className="text-white/50 text-sm">Ingeniería de Software</span>
                 <span className="text-white/35 text-xs">Pasto, Colombia</span>
               </div>
-              {/* Replace hint */}
-              <span className="absolute bottom-4 text-white/25 text-xs">
-                📸 Tu foto va aquí
-              </span>
             </div>
           </div>
 
@@ -96,7 +87,7 @@ export default function About() {
           <div className="lg:col-span-7 space-y-8">
             <div className="space-y-4">
               <h3 className="text-xl sm:text-2xl font-bold text-white tracking-tight">
-                Hola, un placer saludarte 👋
+                Hola, un placer saludarte
               </h3>
               <p className="text-white/80 text-base sm:text-lg leading-relaxed">
                 Soy Miguel Santacruz Beltrán, estudiante de 5to semestre de Ingeniería
@@ -115,7 +106,6 @@ export default function About() {
                   key={fact.label}
                   className="bg-[#0F0F0F] border border-white/[0.05] rounded-2xl p-4 flex items-start gap-3 hover:border-white/15 transition-colors"
                 >
-                  <span className="text-2xl" aria-hidden="true">{fact.icon}</span>
                   <div>
                     <span className="text-xs uppercase tracking-wider text-white/40 block font-semibold">
                       {fact.label}

@@ -13,7 +13,7 @@ export const projects: Project[] = [
     title: "SkillVibes",
     description:
       "Plataforma de tutorías universitarias y gestión de habilidades, con autenticación segura, roles diferenciados de tutor y estudiante, y notificaciones en tiempo real para sesiones y mensajes.",
-    image: "/images/project-1.jpg",
+    image: "/images/project-skillvibes.jpg",
     tags: ["React", "Node.js", "Socket.io", "MongoDB", "JWT", "REST API"],
     github: "https://github.com/MiguelSantacruz1/SkillVibe-B",
     demo: "https://github.com/MiguelSantacruz1/SkillVibe-B",
@@ -37,6 +37,26 @@ export const projects: Project[] = [
     tags: ["Kotlin", "Jetpack Compose", "CameraX", "ML Kit", "Node.js", "Hilt"],
     github: "https://github.com/MiguelSantacruz1/TRACE",
     demo: "https://github.com/MiguelSantacruz1/TRACE",
+    demoLabel: "Ver Repo",
+  },
+  {
+    title: "MicroAlert",
+    description:
+      "Prototipo de aplicación para relojes inteligentes que analiza sensores y utiliza aprendizaje automático local para identificar posibles señales de somnolencia y emitir alertas visuales y por vibración.",
+    image: "/images/project-microalert.png",
+    tags: ["Kotlin", "Wear OS", "Jetpack Compose", "Room", "Health Services", "Random Forest"],
+    github: "https://github.com/MiguelSantacruz1/MicroAlert",
+    demo: "https://github.com/MiguelSantacruz1/MicroAlert",
+    demoLabel: "Ver Repo",
+  },
+  {
+    title: "PARKEASY",
+    description:
+      "Aplicación de escritorio para buscar parqueaderos, consultar disponibilidad en tiempo real, reservar espacios y calcular tarifas. Incluye gestión para operadores y asistente de inteligencia artificial.",
+    image: "/images/project-parkeasy.jpg",
+    tags: ["Kotlin", "Compose Multiplatform", "Supabase", "Ktor Client", "Koin", "Coroutines"],
+    github: "https://github.com/MiguelSantacruz1/ParkEasy",
+    demo: "https://github.com/MiguelSantacruz1/ParkEasy",
     demoLabel: "Ver Repo",
   },
 ];

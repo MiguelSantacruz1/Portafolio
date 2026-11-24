@@ -66,40 +66,27 @@ export default function Hero() {
                   >
                     <span className="text-3xl font-extrabold text-white tracking-tight">MS</span>
                   </div>
-                  <span className="text-white/40 text-xs text-center px-4">
-                    Tu foto va aquí
-                  </span>
                 </div>
               </div>
             </div>
 
-            {/* Right: Quote & Buttons */}
+            {/* Right: Buttons */}
             <div className="lg:col-span-4 flex flex-col justify-center items-start lg:items-end text-left lg:text-right space-y-6 z-20">
-              <div className="space-y-3 max-w-sm">
-                <h2 className="text-xl sm:text-2xl font-bold text-white tracking-tight leading-snug">
-                  El gran código debe sentirse invisible.
-                </h2>
-                <p className="text-white/75 text-sm sm:text-base leading-relaxed">
-                  De la arquitectura técnica al último píxel, construyo
-                  aplicaciones web, móviles y experiencias digitales que
-                  conectan y resuelven problemas reales.
-                </p>
-              </div>
               <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-3 w-full sm:w-auto">
-                <PillButton
-                  href="/cv.pdf"
-                  download="CV_MiguelSantacruz.pdf"
-                  variant="white"
-                  ariaLabel="Descargar Curriculum Vitae en PDF"
-                >
-                  Descargar CV
-                </PillButton>
                 <PillButton
                   href="#proyectos"
                   variant="orange"
                   ariaLabel="Explorar proyectos"
                 >
                   Ver proyectos
+                </PillButton>
+                <PillButton
+                  href="/cv-miguel-santacruz.html"
+                  variant="white"
+                  ariaLabel="Ver CV de Miguel Santacruz"
+                  target="_blank"
+                >
+                  Ver CV
                 </PillButton>
               </div>
             </div>

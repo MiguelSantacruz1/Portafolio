@@ -1,5 +1,4 @@
 import React from "react";
-import Image from "next/image";
 import { testimonials } from "@/data/testimonials";
 
 export default function Testimonials() {
@@ -14,8 +13,7 @@ export default function Testimonials() {
           Testimonios
         </h2>
         <p className="text-white/55 text-sm sm:text-base mt-3">
-          La confianza de clientes y colegas construida a través de entregas
-          consistentes, comunicación transparente y código de alta calidad.
+          Lo que dicen mis compañeros de universidad sobre trabajar juntos.
         </p>
       </div>
 
@@ -41,29 +39,26 @@ export default function Testimonials() {
               <p className="text-white/80 text-sm sm:text-base leading-relaxed italic">{item.text}</p>
             </div>
 
-            {/* Author */}
+            {/* Author — initial circle, no photo */}
             <div className="flex items-center gap-4 pt-6 mt-6 border-t border-white/[0.06]">
               <div
                 style={{
-                  position: "relative",
-                  width: "48px",
-                  height: "48px",
+                  width: "44px",
+                  height: "44px",
                   borderRadius: "9999px",
-                  overflow: "hidden",
+                  background: "rgba(255,90,31,0.15)",
+                  border: "1.5px solid rgba(255,90,31,0.4)",
+                  display: "flex",
+                  alignItems: "center",
+                  justifyContent: "center",
                   flexShrink: 0,
-                  borderWidth: "1px",
-                  borderStyle: "solid",
-                  borderColor: "rgba(255,90,31,0.4)",
                 }}
-                className="group-hover:border-[#FF5A1F] transition-colors"
+                className="group-hover:border-[#FF5A1F]/70 transition-colors"
+                aria-hidden="true"
               >
-                <Image
-                  src={item.avatar}
-                  alt={`Foto de ${item.name}`}
-                  fill
-                  sizes="48px"
-                  className="object-cover"
-                />
+                <span className="text-base font-extrabold text-[#FF5A1F]">
+                  {item.name.charAt(0)}
+                </span>
               </div>
               <div className="flex-1 min-w-0">
                 <h3 className="text-sm sm:text-base font-bold text-white tracking-tight truncate">{item.name}</h3>

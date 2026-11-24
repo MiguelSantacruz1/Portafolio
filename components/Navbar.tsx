@@ -31,11 +31,10 @@ export default function Navbar() {
 
   return (
     <header
-      className={`sticky top-0 z-50 w-full transition-all duration-300 ${
-        scrolled
+      className={`sticky top-0 z-50 w-full transition-all duration-300 ${scrolled
           ? "bg-[#0F0F0F]/85 backdrop-blur-md border-b border-white/[0.06] shadow-lg shadow-black/20"
           : "bg-transparent"
-      }`}
+        }`}
     >
       <div className="max-w-[1240px] mx-auto px-6 lg:px-12 h-20 flex items-center justify-between">
         {/* Logo */}
