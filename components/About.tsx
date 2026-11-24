@@ -62,7 +62,7 @@ export default function About() {
               className="group"
             >
               <Image
-                src="/images/miguel.jpg"
+                src="/images/miguel-perfil.jpg"
                 alt="Foto de Miguel Santacruz"
                 fill
                 sizes="(max-width: 1024px) 100vw, 380px"

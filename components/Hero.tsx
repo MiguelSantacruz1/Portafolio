@@ -45,7 +45,7 @@ export default function Hero() {
                 className="shadow-2xl shadow-black/60 sm:w-64 sm:h-80 md:w-72 md:h-96"
               >
                 <Image
-                  src="/images/miguel.jpg"
+                  src="/images/miguel-perfil.jpg"
                   alt="Foto de Miguel Santacruz"
                   fill
                   priority
